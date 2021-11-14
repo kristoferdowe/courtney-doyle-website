@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap');
+
+
+* {
+    font-family: 'Shippori Mincho B1', serif;
+    font-weight:500;
+    font-size: 16px;
+}

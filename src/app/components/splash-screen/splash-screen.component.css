@@ -8,7 +8,7 @@
   }
 
 .app-splash-screen {
-  background: #54596B;
+  background: white;
   position:fixed;
   top:0;
   left:0;
@@ -19,7 +19,7 @@
   align-items:center;
   height:100%;
   width:100%;
-  transition: left 0.5s;
+  transition: left 2s;
  
 }
 
@@ -33,12 +33,17 @@
     left:0;
     right:0;
     bottom:0;
-     display:flex; 
+    display:flex; 
     height:100%;
     width:100%;
-    background:#54596B;
-    animation: 2s ease-out 0s 1 forwards slideInFromBottom;
-  
+    background:white;
+     animation: 3s ease-out 0s 1 forwards slideInFromBottom; 
+    /* -webkit-animation: fadeInFromNone 0.5s ease-in;
+    -moz-animation: fadeInFromNone 0.5s ease-in;
+    -o-animation: fadeInFromNone 0.5s ease-in;
+    animation: fadeInFromNone 4s ease-out; */
+   
+   
    
   
    
@@ -46,8 +51,82 @@
 }
 .chakra {
     display:flex;
-    margin-left:1.666666667%;
+    margin-left:2.45%;
     z-index: -1;
+    -webkit-animation: fadeInFromNone 5s ease-in;
+    -moz-animation: fadeInFromNone 5s ease-in;
+    -o-animation: fadeInFromNone 5s ease-in;
+    animation: fadeInFromNone 5s ease-out;
+   
 }
 
+/* all opacity styles */
 
+
+@-webkit-keyframes fadeInFromNone {
+  0% {
+      display: none;
+      opacity: 0;
+  }
+
+  1% {
+      display: block;
+      opacity: 0;
+  }
+
+  100% {
+      display: block;
+      opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeInFromNone {
+  0% {
+      display: none;
+      opacity: 0;
+  }
+
+  1% {
+      display: block;
+      opacity: 0;
+  }
+
+  100% {
+      display: block;
+      opacity: 1;
+  }
+}
+
+@-o-keyframes fadeInFromNone {
+  100% {
+      display: none;
+      opacity: 0;
+  }
+
+  0% {
+      display: block;
+      opacity: 0;
+  }
+
+  1% {
+      display: block;
+      opacity: 1;
+  }
+}
+
+@keyframes fadeInFromNone {
+  0% {
+      display: none;
+      opacity: 1;
+  }
+
+  1% {
+      display: block;
+      opacity: 1;
+  }
+
+  100% {
+      display: block;
+      opacity: 0;
+  }
+}

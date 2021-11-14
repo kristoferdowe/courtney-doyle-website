@@ -1,0 +1,41 @@
+li, a, button {
+    font-family: 'Shippori Mincho B1', serif;
+    font-weight:500;
+    font-size: 16px;
+    background-color: inherit;
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    color:white;
+    text-decoration:none;
+    cursor: pointer;
+} 
+
+header {
+    display:flex;
+    justify-content: space-between;
+    flex-direction: flex-start;
+    align-items:center;
+    margin-right:10%;
+    z-index: 100;
+ 
+    
+}
+
+.nav-links {
+    list-style-type: none;
+}
+
+.nav-links li {
+    display:inline-block;
+    padding: 0px 20px;
+}
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li :hover {
+    display:inline-block;
+ 
+    color:coral;
+}

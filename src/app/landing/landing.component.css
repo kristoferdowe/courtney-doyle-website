@@ -1,0 +1,103 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+.pic-wrapper {
+  display: flex;
+  justify-content:center;
+  align-self:center;
+   width: 100%;
+  height: auto; 
+}
+
+
+
+ .profilepic {
+        animation: 6s ease 0s normal forwards 1 fadeIn;
+        -webkit-animation: 6s ease 0s normal forwards 1 fadeIn;
+        margin-top: 5%;
+        margin-right: 45%;
+        width:33%;
+        height:auto;
+        padding-right: 5%;
+        z-index: 1;
+      }
+      
+
+      
+      .mobile {
+          display:flex;
+          justify-content:center;
+        animation: 6s ease 0s normal forwards 1 fadeIn;
+        -webkit-animation: 6s ease 0s normal forwards 1 fadeIn;
+        margin-top: 10%;
+        /* margin-right: 70%; */
+        width:100%;
+        height:auto;
+        padding-right: 5%;
+        z-index: 1;
+      }
+
+
+
+
+
+
