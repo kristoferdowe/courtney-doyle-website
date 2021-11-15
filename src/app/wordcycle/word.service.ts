@@ -9,13 +9,13 @@ import { WordItem } from './word-item';
 export class WordService {
   getWords() {
     return [
-      new WordItem ( WordListComponent, {word: 'good'}),
+      new WordItem ( WordListComponent, {word: 'breath'}),
 
-      new WordItem ( WordListComponent, {word: 'great'}),
+      new WordItem ( WordListComponent, {word: 'passion'}),
 
-       new WordItem ( WordListComponent,   {word: 'fun'}),
+       new WordItem ( WordListComponent,   {word: 'peace'}),
 
-       new WordItem ( WordListComponent,   {word: 'awesome'}),
+       new WordItem ( WordListComponent,   {word: 'life'}),
     ];
   }
 }
