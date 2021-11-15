@@ -99,5 +99,39 @@
 
 
 
+      
+/* yoga text */
+.yogatext {
+  display:flex;
+  position: absolute;
+  font-size: calc(2rem + 6vw);
+  font-weight: 200px;
+  top:0;
+  right:12rem;
+  animation: fadeInAnimation ease-in 10s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  background-size:cover;
+  background-clip: text;
+  color:transparent;
+
+
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+
+  30% {
+    opacity: 0;
+}
+50% {
+  opacity: 0.6;
+}
+  100% {
+      opacity: 1;
+   }
+  }
 
 

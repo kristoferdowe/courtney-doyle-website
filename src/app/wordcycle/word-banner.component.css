@@ -1,0 +1,50 @@
+
+
+/*scrolling words */
+ .word-banner {
+  display:flex;
+ 
+  position: absolute;
+  top:10;
+  right:12rem;
+  animation: fadeInAnimation ease-in 10s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+
+  30% {
+    opacity: 0;
+}
+50% {
+  opacity: 0.6;
+}
+  100% {
+      opacity: 1;
+   }
+  }
+
+  .word-list {
+      display:flex;
+      flex-direction: row;
+      justify-content: flex-start;
+   
+  }
+
+
+
+   :host ::ng-deep {
+    display:flex;
+    position: absolute;
+    padding-top:2rem;
+    top:13rem;
+    right:1rem;
+    animation: fadeInAnimation ease-in 10s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+ 
+  }

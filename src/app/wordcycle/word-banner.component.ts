@@ -13,10 +13,10 @@ import { WordComponent } from './word.component';
 
 @Component({
   selector: 'app-word-banner',
-
+  styleUrls: ['.././wordcycle/word-banner.component.css'],
   template: `
     <div class="word-banner">
-      <ng-template [word-host]></ng-template>
+      <ng-template [word-host] ></ng-template>
     </div>
   `,
 })
@@ -41,7 +41,7 @@ export class WordBannerComponent implements OnInit, OnDestroy {
     this.currentWordIndex = (this.currentWordIndex + 1) % this.words.length;
 
     let wordItem = this.words[this.currentWordIndex];
-    console.log(this.currentWordIndex, wordItem);
+  
 
     let componentFactory = this.componentFactoryResolver.resolveComponentFactory(
       wordItem.component
@@ -60,7 +60,7 @@ export class WordBannerComponent implements OnInit, OnDestroy {
   getWords() {
     this.interval = setInterval(() => {
       this.loadComponent();
-    }, 3000);
+    }, 3700);
   }
 }
 
