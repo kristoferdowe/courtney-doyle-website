@@ -1,6 +1,14 @@
 <div class="landing-wrapper">
-    <div class="pic-wrapper ">
-<img [className] = "!showMobile ? 'mobile' : 'profilepic' " src="../../assets/images/ckdyoga.jpg">
+    <div class="pic-wrapper">
+ 
+<img [ngClass] = "showPic === 1 ? 'show-mobile-pic' : 'hidden' " src="../../assets/images/ckdyoga.jpg">
+<img [ngClass] = "showPic === 2 ? 'show-tablet-pic' : 'hidden' " src="../../assets/images/ckdyoga.jpg">
+<img [ngClass] = "showPic === 3 ? 'show-desktop-pic' : 'hidden' " src="../../assets/images/ckdyoga.jpg">
 </div>
-<p class="yogatext" style="background-image: url('../../assets/images/tropicalpic.jpg')">yoga is </p>
+
+
+
+
+<p class="yogatext" style="background-image: url('../../assets/images/tropicalpic.jpg')"> yoga is </p>
+<p class="landing-text">Hey</p>
 </div>
