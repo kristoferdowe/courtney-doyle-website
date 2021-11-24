@@ -44,3 +44,8 @@
   color: rgb(65, 63, 63);
   cursor: pointer;
 }
+
+
+.show-mobile :host ::ng-deep {
+  display:none;
+}

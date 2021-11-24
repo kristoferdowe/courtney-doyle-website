@@ -1,4 +1,6 @@
-
+.mobile-nav li, a, button {
+    display:none;
+}
 
 li, a, button {
     font-family: 'Shippori Mincho B1', serif;

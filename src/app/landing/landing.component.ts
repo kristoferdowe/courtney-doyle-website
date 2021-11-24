@@ -8,7 +8,7 @@ import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
 })
 export class LandingComponent implements OnInit {
   public showPic!: number;
-  public showMobile!: boolean;
+
 
 
 
