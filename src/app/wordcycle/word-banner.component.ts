@@ -15,8 +15,10 @@ import { WordComponent } from './word.component';
   selector: 'app-word-banner',
   styleUrls: ['.././wordcycle/word-banner.component.css'],
   template: `
+    <div >
     <div class="word-banner">
       <ng-template [word-host] ></ng-template>
+    </div>
     </div>
   `,
 })
@@ -26,12 +28,22 @@ export class WordBannerComponent implements OnInit, OnDestroy {
   @ViewChild(WordDirective) wordHost: WordDirective;
   interval: any;
 
-  constructor(private componentFactoryResolver: ComponentFactoryResolver) {}
 
-  ngOnInit() {
+  constructor(
+    private componentFactoryResolver: ComponentFactoryResolver,
+    
+    ) {}
+
+  ngOnInit(): void {
     this.loadComponent();
     this.getWords();
-  }
+
+
+
+
+   
+}
+  
 
   ngOnDestroy() {
     clearInterval(this.interval);

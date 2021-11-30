@@ -1,14 +1,3 @@
-/*scrolling words */
-.word-banner {
-  display: flex;
-  position: absolute;
-  top: 10;
-  right: 8rem;
-  animation: fadeInAnimation ease-in 10s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-}
-
 @keyframes fadeInAnimation {
   0% {
     opacity: 0;
@@ -24,28 +13,53 @@
     opacity: 1;
   }
 }
-
+/* 
 .word-list {
-  display: flex;
+  display: none;
   flex-direction: row;
   justify-content: flex-start;
+} */
+
+/*scrolling words container */
+
+
+.word-banner {
+  
+  display:flex;
+
+
+  align-items: center;
+  animation: fadeInAnimation ease-in 10s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+ 
+  
+
 }
 
 /*actual word-scroll list*/
 :host ::ng-deep {
   display: flex;
-  position: absolute;
-  padding-top: 2rem;
-  top: 9rem;
-  right: 6rem;
+  justify-content: center;
+  align-items: center;
+  margin:0 !important;
   animation: fadeInAnimation ease-in 10s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   color: rgb(65, 63, 63);
   cursor: pointer;
+ 
 }
 
-
-.show-mobile :host ::ng-deep {
+ .show-mobile-word  {
   display:none;
+
+
+
+  
 }
+
+.hidden {
+  display: none;
+}
+

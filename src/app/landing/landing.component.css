@@ -1,3 +1,9 @@
+.landing-wrapper {
+  width:70vw;
+  overflow-x:hidden;
+}
+
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -97,7 +103,7 @@ display:none;
   -webkit-animation: 6s ease 0s normal forwards 1 fadeIn;
   margin-top: 2rem;
   /* margin-right: 0rem; */
-  width: 90vw;
+  width: 70vw;
   height: auto;
   z-index: 1;
 
@@ -136,8 +142,10 @@ display:none;
   justify-content: center;
   align-items:center;
   align-self:center;
-  font-size: calc(1rem + 6vw);
+  font-size: calc(3rem + 6vw);
+  font-weight:bold;
   margin:0;
+  padding-top:3rem;
   animation: fadeInAnimation ease-in 10s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
