@@ -1,36 +1,21 @@
-import { Component, OnInit } from '@angular/core';
-import { WordService } from './wordcycle/word.service';
-import { WordItem } from './wordcycle/word-item';
-import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
-
+import { Component, HostBinding } from '@angular/core';
 
 @Component({
-  selector: 'app-root', 
+  selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  template: `
-  <app-word-banner [words] = "words"></app-word-banner>
-  
-  `
-,
- 
 })
+export class AppComponent {
+  title = 'not just asana';
+  
+  @HostBinding("class.drawer-open")
+  isDrawerOpen: boolean = false;
+  
+  toggleDrawer(isDrawerOpen: boolean) {
+    this.isDrawerOpen = isDrawerOpen;
+  }
 
+  constructor() {}
 
-
-export class AppComponent  {
-  title = 'yoga1';
-
-
-constructor() {}
-
-ngOnInit(): void {
-
-}}
- 
-
-
-
-
-
-
+  ngOnInit(): void {}
+}

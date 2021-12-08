@@ -17,7 +17,7 @@ export class WordService {
 
       new WordItem(WordListComponent, { word: 'balance' }),
 
-      new WordItem(WordListComponent, { word: 'passion' }),
+   
     ];
   }
 }

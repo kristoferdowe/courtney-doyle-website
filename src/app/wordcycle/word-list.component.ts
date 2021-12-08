@@ -7,7 +7,7 @@ import { BreakpointObserver , BreakpointState } from '@angular/cdk/layout';
 @Component({
 
   template: `<div class="word-list"  >
-  <p [ngClass]="showPic === 1 ? 'show-mobile-word' : 'hidden'" [style] = "{'font-size' : '5rem'}"> {{data}} </p>
+  <p [ngClass]="showPic === 1 ? 'show-mobile-word' : 'hidden'" [style] = "{'font-size' : '3rem'}"> {{data}} </p>
   </div>
   `
 })

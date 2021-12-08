@@ -15,11 +15,11 @@ import { WordComponent } from './word.component';
   selector: 'app-word-banner',
   styleUrls: ['.././wordcycle/word-banner.component.css'],
   template: `
-    <div >
+ 
     <div class="word-banner">
       <ng-template [word-host] ></ng-template>
     </div>
-    </div>
+  
   `,
 })
 export class WordBannerComponent implements OnInit, OnDestroy {
@@ -72,7 +72,7 @@ export class WordBannerComponent implements OnInit, OnDestroy {
   getWords() {
     this.interval = setInterval(() => {
       this.loadComponent();
-    }, 3700);
+    }, 5000);
   }
 }
 

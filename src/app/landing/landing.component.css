@@ -1,5 +1,5 @@
 .landing-wrapper {
-  width:70vw;
+  width:90vw;
   overflow-x:hidden;
 }
 
@@ -101,7 +101,7 @@ display:none;
   justify-content:center;
   animation: 6s ease 0s normal forwards 1 fadeIn;
   -webkit-animation: 6s ease 0s normal forwards 1 fadeIn;
-  margin-top: 2rem;
+  /* margin-top: 4rem; */
   /* margin-right: 0rem; */
   width: 70vw;
   height: auto;
@@ -136,16 +136,17 @@ display:none;
   z-index: 1;
 }
 /* yoga text */
-.show-mobile-text {
+
+.show-mobile-text2 {
   display: flex;
   flex-direction:row;
   justify-content: center;
   align-items:center;
   align-self:center;
-  font-size: calc(3rem + 6vw);
+  font-size: calc(2rem + 3vw);
   font-weight:bold;
   margin:0;
-  padding-top:3rem;
+  /* padding-top:3rem; */
   animation: fadeInAnimation ease-in 10s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;

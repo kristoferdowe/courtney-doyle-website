@@ -13,12 +13,7 @@
     opacity: 1;
   }
 }
-/* 
-.word-list {
-  display: none;
-  flex-direction: row;
-  justify-content: flex-start;
-} */
+
 
 /*scrolling words container */
 
@@ -27,7 +22,7 @@
   
   display:flex;
 
-
+  font-size:1rem;
   align-items: center;
   animation: fadeInAnimation ease-in 10s;
   animation-iteration-count: 1;
@@ -48,16 +43,10 @@
   animation-fill-mode: forwards;
   color: rgb(65, 63, 63);
   cursor: pointer;
- 
+
 }
 
- .show-mobile-word  {
-  display:none;
 
-
-
-  
-}
 
 .hidden {
   display: none;

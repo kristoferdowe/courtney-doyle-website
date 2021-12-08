@@ -1,4 +1,12 @@
 <div class="word-banner">
+  
   <ng-template [word-host]></ng-template>
-  <app-word-banner [words]="words"></app-word-banner>
+  <p
+  [ngClass]="showPic === 1 ? 'show-mobile-text2' : 'hidden'"
+  style="background-image: url('../../assets/images/tropicalpic.jpg')"
+>
+  holistic 
+
+  <app-word-banner [words]="words" ></app-word-banner>
+</p>
 </div>
