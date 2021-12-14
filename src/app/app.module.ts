@@ -18,6 +18,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { NavBarModule } from './navbar/nav-bar.module';
 
 import { NavBarComponent } from './navbar/navbar.component';
+import { BiocomponentComponent } from './biocomponent/biocomponent.component';
+import { FormpageComponent } from './formpage/formpage.component';
 
 
 const routes: Routes = [];
@@ -36,6 +38,8 @@ const routes: Routes = [];
     WordListComponent,
     WordDirective,
     WordAppComponent,
+    BiocomponentComponent,
+    FormpageComponent,
   ],
   entryComponents: [WordListComponent],
   bootstrap: [AppComponent],

@@ -19,6 +19,7 @@
 
 .navbar-nav.override {
 	padding: 1rem 2rem;
+	list-style: none;
 }
 
 .nav-item.override {

@@ -1,4 +1,4 @@
-<header>
+<header class = "nav-header">
     <nav class="navbar navbar-expand-md" id="navbar">
       <div class="container">
         <div class="nav-toggler" [class.drawer-open]="isDrawerOpen" id="nav-toggler" (click)="toggleNavDrawer(!isDrawerOpen)">
@@ -7,8 +7,9 @@
             <span></span>
             <span></span>
         </div>
-        <a class="navbar-brand override" routerLink="/">
-            COURTNEY DOYLE YOGA
+        <a class="navbar-brand override" routerLink="/" style="background-image: url('../../assets/images/tropicalpic.jpg')">
+            not just asana
+          
         </a>
         <nav-drawer [isDrawerOpen]="isDrawerOpen" (drawerToggleEmitter)="toggleNavDrawer($event)"></nav-drawer>
       </div>

@@ -72,7 +72,7 @@ export class WordBannerComponent implements OnInit, OnDestroy {
   getWords() {
     this.interval = setInterval(() => {
       this.loadComponent();
-    }, 5000);
+    }, 3000);
   }
 }
 

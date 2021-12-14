@@ -48,7 +48,7 @@
   
   .dummy-text {
     display: block;
-    font-family: Verdana, Geneva, sans-serif;
+    font-family: inherit;
     font-style: italic;
     font-weight: normal;
     font-size: 1rem;
