@@ -20,9 +20,12 @@ import { NavBarModule } from './navbar/nav-bar.module';
 import { NavBarComponent } from './navbar/navbar.component';
 import { BiocomponentComponent } from './biocomponent/biocomponent.component';
 import { FormpageComponent } from './formpage/formpage.component';
+import { AboutComponent } from './about/about.component';
 
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path: 'about-component' , component: AboutComponent } 
+];
 @NgModule({
   imports: [BrowserModule, LayoutModule, HttpClientModule, NavBarModule, RouterModule.forRoot(routes) ],
   providers: [WordService],
@@ -40,6 +43,7 @@ const routes: Routes = [];
     WordAppComponent,
     BiocomponentComponent,
     FormpageComponent,
+    AboutComponent,
   ],
   entryComponents: [WordListComponent],
   bootstrap: [AppComponent],
