@@ -17,9 +17,9 @@
 .bio-container {
   
     animation: fadeInAnimation 10s;
-    background-color: rgba(255, 255, 255, .15);  
+    /* background-color: #8e9aaf;   */
     backdrop-filter: blur(1px);
-    border-radius: 0.5rem;
+    /* border-radius: 0.5rem; */
 }
 
 .bio {
@@ -28,5 +28,45 @@
     padding:4rem;
     font-size:large;
     text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
+	letter-spacing: 1px;
+	margin:0;
 
+}
+
+.bio-wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  z-index:-1;
+}
+
+.bio-wave svg {
+  position: relative;
+  display: block;
+  width: calc(217% + 1.3px);
+  height: 335px;
+}
+
+.bio-wave .shape-fill {
+  fill: #abc4ff;
+}
+
+/** For tablet devices **/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .bio-wave svg {
+      width: calc(216% + 1.3px);
+      height: 350px;
+  }
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .bio-wave svg {
+      width: calc(300% + 1.3px);
+      height: 500px;
+  }
 }

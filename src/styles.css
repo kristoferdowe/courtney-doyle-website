@@ -14,6 +14,22 @@ html {
   margin: 0 !important;
   overflow-x: hidden;
 }
+.section {
+  position: relative;
+  display:flex;
+  align-items:center;
+  min-height:400px;
+  padding: 100px 20vw;
+
+}
+
+
+
+.green {
+background:rgb(194, 204, 180);
+}
+
+
 
 .hidden {
   display: none;
@@ -48,7 +64,7 @@ html {
   margin: 0;
   padding-left: 2rem;
   padding-right:2rem;
-  /* padding-top:3rem; */
+
   animation: fadeInAnimation ease-in 10s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
@@ -57,3 +73,5 @@ html {
   color: transparent;
   cursor: pointer;
 }
+
+
