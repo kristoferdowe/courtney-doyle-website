@@ -8,10 +8,21 @@
     margin-bottom:50px;
  
 }
-
+ .form-header-contact {
+    background-size: cover;
+	background-clip: text;
+	color: transparent;
+    font-size: 3rem;
+    margin:0;
+}
 .form-header {
-    color:whitesmoke;
-    text-shadow: 0px 0px 30px white,0px 0px 30px white,0px 0px 30px white,0px 0px 10px rgb(2, 56, 18),0px 0px 10px rgb(2, 56, 6);
+    background-size: cover;
+	background-clip: text;
+	color: transparent;
+    font-size: 3rem;
+    margin-bottom: 0;
+    /* color:whitesmoke; */
+    /* text-shadow: 0px 0px 30px white,0px 0px 30px white,0px 0px 30px white,0px 0px 10px #F48185, 0px 0px 10px #F48185; */
 }
 
 
