@@ -11,7 +11,7 @@ export class BiocomponentComponent implements OnInit {
 
   ngOnInit(): void {
     this.breakpointObserver
-    .observe(['(min-width: 0px) and (max-width: 767px) '])
+    .observe(['(min-width: 0px) and (max-width: 1200px) '])
     .subscribe((state: BreakpointState) => {
       if (state.matches) {
         this.showBioMedia = 1;
@@ -19,7 +19,7 @@ export class BiocomponentComponent implements OnInit {
      
     });
     this.breakpointObserver
-    .observe(['(min-width: 768px)'])
+    .observe(['(min-width: 1200px)'])
     .subscribe((state: BreakpointState) => {
       if (state.matches) {
         this.showBioMedia = 2;
