@@ -10,7 +10,8 @@
         <a routerLink="about" routerLinkActive="active" class="nav-link override" id="About">About</a>
     </li>
     <li class="nav-item override">
-        <a routerLink="" class="nav-link override" id="Contact">Contact</a>
+        <a [ngClass] = "showNav === 1 ? 'nav-link override' : 'hidden'" href="#anchor-scroll" class="nav-link override" id="Contact"(click)="toggleNavDrawer(!isDrawerOpen)">Contact</a>
+        <a [ngClass] = "showNav === 3 ? 'nav-link override' : 'hidden'" href="#anchor-scroll" class="nav-link override" id="Contact"(click)="toggleNavDrawer(isDrawerOpen)">Contact</a>
     </li>
   
 </ul>

@@ -22,8 +22,8 @@ export class NavBarComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    // this.navElement;
-    // this.navElement = null;
+    //  this.navElement;
+    //  this.navElement = null;
     this.isDrawerOpen = false;
   }
 
