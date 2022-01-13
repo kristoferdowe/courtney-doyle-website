@@ -33,7 +33,7 @@
   flex-direction: row;
   justify-content: center;
   border-radius: 2% 2% 2% 2%;
-  background: linear-gradient(0deg, #ABC4FF, #f7f7f781  40%, #f7f7f7 );
+  background: linear-gradient(0deg, #ABC4FF, #f7f7f734  40%, #f7f7f7 );
   box-shadow: inset 5px 5px 10px #d2d2d265,
               inset -5px -5px 10px #ffffff00;
 
@@ -48,7 +48,7 @@
   flex-direction: row;
   justify-content: center;
   border-radius: 2% 2% 2% 2%;
-  background: linear-gradient(0deg, #ABC4FF, #f7f7f781  40%, #f7f7f7 );
+  background: linear-gradient(0deg, #ABC4FF, #f7f7f734  40%, #f7f7f7 );
   box-shadow: inset 5px 5px 10px #d2d2d265,
               inset -5px -5px 10px #ffffff00;
               
