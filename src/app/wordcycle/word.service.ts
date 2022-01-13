@@ -15,7 +15,9 @@ export class WordService {
 
       new WordItem(WordListComponent, { word: 'yoga therapy' }),
 
-      new WordItem(WordListComponent, { word: 'Y12SR' }),
+      new WordItem(WordListComponent, { word: `children's yoga` }),
+
+      new WordItem(WordListComponent, { word: 'recovery yoga' }),
 
       new WordItem(WordListComponent, { word: 'coaching' }),
 

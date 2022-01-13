@@ -1,3 +1,4 @@
+
 :host {
 	position: fixed;
 	display: block;
@@ -18,20 +19,32 @@
 }
 
 .navbar-nav.override {
-	padding: 1rem 2rem;
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	/* padding: 1rem 2rem; */
 	list-style: none;
 }
 
 .nav-item.override {
-	font-size: 1.25rem;
+	font-size: 1rem;
 	padding: 1rem 0 0.5rem 0;
 	color: rgba(50, 50, 50, 0.8);
 	border-bottom: 1px solid rgba(20, 20, 20, 0.9);
 }
 
+.nav-link.override:hover {
+	text-decoration: none;
+	color: #F19A9D;
+	
+}
+
 .nav-link.override {
 	text-decoration: none;
 	color: inherit;
+	font-size: 2rem;
+	
+	
 }
 
 .nav-item.override:active > .nav-link.override {
@@ -68,9 +81,9 @@
 		width: unset;
 	}
 
-	.navbar-nav.override {
+	/* .navbar-nav.override {
 		padding: unset;
-	}
+	} */
 
 	.nav-item.override {
 		font-size: 1.25rem;
@@ -85,3 +98,27 @@
 
 }
 
+
+.navbar-nav.override {
+	padding: 0;
+	list-style: none;
+
+}
+
+.desktopnav #navbar-list{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+
+
+
+}
+
+.mobilenav #navbar-list {
+display:flex;
+flex-direction: column;
+}
+
+#navbar-list {
+	margin:0;
+}

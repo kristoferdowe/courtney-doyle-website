@@ -7,13 +7,14 @@ import { BreakpointObserver , BreakpointState } from '@angular/cdk/layout';
 @Component({
 
   template: `<div class="word-list"  >
-  <p [ngClass]="showPic === 1 ? 'show-mobile-word' : 'hidden'" [style] = "{'font-size' : '3rem'}"> {{data}} </p>
+  <p [ngClass]="showWordList === 1 ? 'show-mobile-word' : 'hidden'" [style] = "{'font-size' : '3rem'}"> {{data}} </p>
+  <p [ngClass]="showWordList === 2 ? 'show-desktop-word' : 'hidden'" [style] = "{'font-size' : '6rem'}"> {{data}} </p>
   </div>
   `
 })
 export class WordListComponent implements WordComponent {
   @Input() data: any;
-  public showPic!: number;
+  public showWordList!: number;
 
 
 
@@ -29,24 +30,24 @@ constructor(
   .observe(['(min-width: 0px) and (max-width: 767px) '])
   .subscribe((state: BreakpointState) => {
     if (state.matches) {
-      this.showPic = 1;
+      this.showWordList = 1;
     }
    
   });
   this.breakpointObserver
-  .observe(['(min-width: 768px) and (max-width: 1023px) '])
+  .observe(['(min-width: 768px) and (max-width: 1920px)'])
   .subscribe((state: BreakpointState) => {
     if (state.matches) {
-      this.showPic = 2;
+      this.showWordList = 2;
     } 
     
   });
-  this.breakpointObserver
-  .observe(['(min-width: 1024px)  '])
-  .subscribe((state: BreakpointState) => {
-    if (state.matches) {
-      this.showPic = 3;
-    } 
-  });
+  // this.breakpointObserver
+  // .observe(['(min-width: 1024px)  '])
+  // .subscribe((state: BreakpointState) => {
+  //   if (state.matches) {
+  //     this.showWordList = 3;
+  //   } 
+  // });
  }
 }

@@ -36,12 +36,13 @@
 	position: absolute;
 	display: block;
 	margin-left: .45rem;
-	
+	margin-right: .45rem;
 	left: 0;
 	width: 25px;
 	height: 40px;
 	transition: 0.3s ease;
 	padding-top:2.33rem;
+	z-index:1;
 }
 
 .nav-toggler span {
@@ -105,9 +106,9 @@
 	margin-right: auto;
 	font-size:2.8rem;
 	font-weight: bolder;
-	padding-left:1rem;
+	/* padding-left:1rem; */
 	text-decoration: none;
-	padding-bottom:3rem;
+	padding-bottom:1rem;
 	background-size: cover;
 	background-clip: text;
 	color: transparent;
@@ -147,16 +148,34 @@
   }
   
   .wave .shape-fill {
-	fill: #dbd9db;
+	fill: #f48185c2;
   }
   
   /** For tablet devices **/
-  @media (min-width: 768px) and (max-width: 1023px) {
+  @media (min-width: 768px) and (max-width: 1920px) {
 	.wave svg {
 		width: calc(119% + 1.3px);
-		height: 162px;
+		height: calc(100% + 5px);
 		z-index:0;
 	  
+	}
+	
+	.navbar-brand.override {
+		position: relative;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		font-size:6rem;
+		font-weight: bolder;
+		padding-left:1rem;
+		text-decoration: none;
+		/* padding-bottom:3rem; */
+		background-size: cover;
+		background-clip: text;
+		color: transparent;
+		top:0;
+	
+	
 	}
   }
   
@@ -167,3 +186,7 @@
 		height: 108px;
 	}
   }
+
+/* .desktop {
+	display:none;
+} */

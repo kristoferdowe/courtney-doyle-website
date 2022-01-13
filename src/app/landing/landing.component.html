@@ -1,20 +1,13 @@
 
 <div class="landing-wrapper">
- 
   <div class="pic-wrapper">
+    <div [ngClass] = "showPic === 1 ? 'pic-border-mobile' : 'pic-border-desktop'">
     <img
-      [ngClass]="showPic === 1 ? 'show-mobile-pic' : 'hidden'"
-      src="../../assets/images/ckdyoga.jpg"
-    />
-    <img
-      [ngClass]="showPic === 2 ? 'show-tablet-pic' : 'hidden'"
-      src="../../assets/images/ckdyoga.jpg"
-    />
-    <img
-      [ngClass]="showPic === 3 ? 'show-desktop-pic' : 'hidden'"
+      [ngClass]="showPic === 1 ? 'show-mobile-pic' : 'show-desktop-pic'"
       src="../../assets/images/ckdyoga.jpg"
     />
   </div>
+</div>
 
   <p class="landing-text"></p>
 </div>

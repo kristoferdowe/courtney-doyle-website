@@ -1,12 +1,18 @@
+<div [ngClass] = "showNav === 1 ? 'mobilenav' : 'desktopnav'">
+
 <ul id="navbar-list" class="navbar-nav override">
-    <li class="nav-item override" (click)="onNavLinkClicked($event)">
+
+    <li class="nav-item override" >
         <a routerLink="/" class="nav-link override" id="Home">Home</a>
     </li>
-    <li class="nav-item override" (click)="onNavLinkClicked($event)">
-        <a routerLink="/app-about" routerLinkActive="active" class="nav-link override" id="About">About</a>
+    
+    <li class="nav-item override" >
+        <a routerLink="about" routerLinkActive="active" class="nav-link override" id="About">About</a>
     </li>
-    <li class="nav-item override" (click)="onNavLinkClicked($event)">
-        <a routerLink="/src/app/formpage/formpage.component.html" class="nav-link override" id="Contact">Contact</a>
+    <li class="nav-item override">
+        <a routerLink="" class="nav-link override" id="Contact">Contact</a>
     </li>
+  
 </ul>
+</div>
 <span class="drawer-inset-shadow"></span>

@@ -14,7 +14,6 @@ import { WordDirective } from './wordcycle/word.directive';
 import { WordService } from './wordcycle/word.service';
 import { WordAppComponent } from './wordcycle/word-app.component';
 
- import { Routes, RouterModule } from '@angular/router';
 import { NavBarModule } from './navbar/nav-bar.module';
 
 import { NavBarComponent } from './navbar/navbar.component';
@@ -22,16 +21,14 @@ import { BiocomponentComponent } from './biocomponent/biocomponent.component';
 import { FormpageComponent } from './formpage/formpage.component';
 import { AboutComponent } from './about/about.component';
 import { AppRoutingModule } from './app-routing.module';
+import { HomeComponent } from './home/home.component';
 
 
-const routes: Routes = [
-//   { path : '/', component: AppComponent},
-// { path : 'app-about', component: AboutComponent}
-];
 @NgModule({
-  imports: [BrowserModule, LayoutModule, HttpClientModule, NavBarModule, RouterModule.forRoot(routes), AppRoutingModule ],
+  imports: [BrowserModule, LayoutModule, HttpClientModule, NavBarModule, AppRoutingModule ],
   providers: [WordService],
   declarations: [
+    HomeComponent,
     AppComponent,
     //main screen components
     SplashScreenComponent,
@@ -49,7 +46,7 @@ const routes: Routes = [
   ],
   entryComponents: [WordListComponent],
   bootstrap: [AppComponent],
-  // exports:[RouterModule],
+
 })
 export class AppModule {
   constructor() {}
