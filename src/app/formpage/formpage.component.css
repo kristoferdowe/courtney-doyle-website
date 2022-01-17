@@ -21,7 +21,7 @@
     align-items:center;
     width:100vw;
     margin-bottom:50px;
-    animation: fadeInAnimation ease-in 7s;
+    animation: fadeInAnimation ease-in 8s;
  
 }
  .form-header-contact {
@@ -166,3 +166,59 @@ align-self: center;
         height: 53px;
     }
 }
+
+.assisting-pic {
+    display:flex;
+    max-width:60vw;
+    height:auto;
+    border-radius: 50px;
+  
+    
+}
+
+.pic-border {
+    display: flex;
+    width: auto;
+    margin-top:3rem;
+    justify-content: center;
+    align-items:center;
+    animation: 6s ease 0s normal forwards 1 fadeIn;
+    -webkit-animation: 6s ease 0s normal forwards 1 fadeIn;
+    z-index: 0;
+    border-radius: 50px;
+    background: #DFE5E4;
+    box-shadow:  9px 9px 18px #595c5b,
+                -9px -9px 18px #ffffff;
+    }
+
+    .class-sched-header {
+        background-size: cover;
+        background-clip: text;
+        color: transparent;
+        font-size: 2.45rem;
+        margin-bottom: 0;
+        padding-top:2rem;
+    }
+
+    .class-sched {
+        background-size: cover;
+        background-clip: text;
+        color: transparent;
+        font-size: 1.75rem;
+        margin-bottom: 0;
+    }
+
+    .class-sched-subheader {
+        background-size: cover;
+        background-clip: text;
+        color: transparent;
+        font-size: 1.5rem;
+        margin-bottom: 0;
+    }
+    a:link {
+        text-decoration: none;
+      }
+
+      a:visited {
+        text-decoration: none;
+      }

@@ -2,17 +2,19 @@
 
 <ul id="navbar-list" class="navbar-nav override">
 
-    <!-- <li class="nav-item override" >
-        <a routerLink="/" class="nav-link override" id="Home">Home</a>
-    </li>
-     -->
+  
     <li class="nav-item override" >
-        <a routerLink="about" routerLinkActive="active" class="nav-link override" id="About">About</a>
+        <a routerLink="about" routerLinkActive="active" class="nav-link override" id="About">Biography</a>
     </li>
     <li class="nav-item override">
         <a [ngClass] = "showNav === 1 ? 'nav-link override' : 'hidden'" href="#anchor-scroll" class="nav-link override" id="Contact"(click)="toggleNavDrawer(!isDrawerOpen)">Contact</a>
         <a [ngClass] = "showNav === 3 ? 'nav-link override' : 'hidden'" href="#anchor-scroll" class="nav-link override" id="Contact"(click)="toggleNavDrawer(isDrawerOpen)">Contact</a>
     </li>
+      <li class="nav-item override" >
+        <a [ngClass] = "showNav === 1 ? 'nav-link override' : 'hidden'" href="#schedule-anchor" class="nav-link override" id="Contact"(click)="toggleNavDrawer(!isDrawerOpen)">Schedule</a>
+        <a [ngClass] = "showNav === 3 ? 'nav-link override' : 'hidden'" href="#schedule-anchor" class="nav-link override" id="Contact"(click)="toggleNavDrawer(isDrawerOpen)">Schedule</a>
+    </li>
+    
   
 </ul>
 </div>

@@ -21,7 +21,7 @@
 .navbar-nav.override {
 	display:flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	/* padding: 1rem 2rem; */
 	list-style: none;
 }
@@ -43,6 +43,8 @@
 	text-decoration: none;
 	color: inherit;
 	font-size: 2rem;
+
+	
 	
 	
 }
@@ -117,6 +119,7 @@
 .mobilenav #navbar-list {
 display:flex;
 flex-direction: column;
+
 }
 
 #navbar-list {
